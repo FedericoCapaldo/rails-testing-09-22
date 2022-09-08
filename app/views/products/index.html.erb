@@ -1,11 +1,11 @@
 <h1>Awesome Products</h1>
 <% @products.each do |product| %>
   <div class="card-product" >
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" 
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg"
       style="width:100%;">
-    <div class="card-product-infos">
-      <h2>Skello</h2>
-      <p>Manage your staff calendar</p>
-    </div>
+      <div class='card-product-infos'>
+        <h2><%= product.title %></h2>
+        <p><%= product.tagline %></p>
+      </div>
   </div>
 <% end %>
